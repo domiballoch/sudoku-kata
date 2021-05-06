@@ -20,6 +20,9 @@ Lists with random numbers to create initial grid
 <br/>8. This bit is the key: re-check the list using sublists but use a recursive loop until they both pass vertically and horizontally
 <br/>9. Display all lists in a sudoku grid 9x9
 
+<br/>Note: 
+<br/>Collections.shuffle has to be used. If you use Random your IDE will crash as its more expensive to call
+<br/>If you try and check more than one list as part of the recursive loop a stackoverflow error will occur
 
 <h3>Learning Outcomes</h3>
 Using lists, loops, algorithms, logical thinking and problem solving
