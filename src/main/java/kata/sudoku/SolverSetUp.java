@@ -57,8 +57,7 @@ public class SolverSetUp {
      * @return int
      */
     public int random() {
-        num = (int) ((Math.random() * 9) + 1);
-        return num;
+        return num = (int) ((Math.random() * 9) + 1);
     }
 
     /**
