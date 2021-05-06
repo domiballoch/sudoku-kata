@@ -28,8 +28,7 @@ public class SolverSetUp {
      * 5. Vertical check the first list in the next group of 3 against the others
      * 6. Check and order the next list against the previous using sublists
      * 7. Vertical check the same list against the lists above it
-     * 8. This bit is the key: re-check the list using sublists but use a recursive loop until they both pass
-     *      vertically and horizontally
+     * 8. This bit is the key: re-check the list using sublists but use a recursive loop until they both pass vertically and horizontally
      * 9. Display all lists in a sudoku grid 9x9
      */
 
@@ -99,13 +98,10 @@ public class SolverSetUp {
         verticalCheckers.verticalCheckerList5(getList5(), getList1(), getList2(), getList3(), getList4());
         subListCheckers.subListCheckerCompareThreeLists(getList6(), getList5(), getList4());
         verticalCheckers.verticalCheckerList6(getList6(), getList1(), getList2(), getList3(), getList4(), getList5());
-        verticalCheckers.verticalCheckerList7(getList7(), getList1(), getList2(), getList3(), getList4(), getList5(),
-                getList6());
+        verticalCheckers.verticalCheckerList7(getList7(), getList1(), getList2(), getList3(), getList4(), getList5(), getList6());
         subListCheckers.subListCheckerCompareTwoLists(getList8(), getList7());
-        verticalCheckers.verticalCheckerList8(getList8(), getList1(), getList2(), getList3(), getList4(), getList5(),
-                getList6(), getList7());
+        verticalCheckers.verticalCheckerList8(getList8(), getList1(), getList2(), getList3(), getList4(), getList5(), getList6(), getList7());
         subListCheckers.subListCheckerCompareThreeLists(getList9(), getList8(), getList7());
-        verticalCheckers.verticalCheckerList9(getList9(), getList1(), getList2(), getList3(), getList4(), getList5(),
-                getList6(), getList7(), getList8());
+        verticalCheckers.verticalCheckerList9(getList9(), getList1(), getList2(), getList3(), getList4(), getList5(), getList6(), getList7(), getList8());
     }
 }
