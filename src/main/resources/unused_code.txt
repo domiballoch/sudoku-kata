@@ -1,0 +1,44 @@
+//    List<Integer> vertList1 = new ArrayList<>();
+//    List<Integer> vertList2 = new ArrayList<>();
+//    List<Integer> vertList3 = new ArrayList<>();
+//    List<Integer> vertList4 = new ArrayList<>();
+//    List<Integer> vertList5 = new ArrayList<>();
+//    List<Integer> vertList6 = new ArrayList<>();
+//    List<Integer> vertList7 = new ArrayList<>();
+//    List<Integer> vertList8 = new ArrayList<>();
+//    List<Integer> vertList9 = new ArrayList<>();
+//    List<List<Integer>> superVertList = new ArrayList<>();
+//
+//    public void makeVerticalLists() {
+//        for(List<Integer> list : superList) {
+//            vertList1.add(list.get(0));
+//            vertList2.add(list.get(1));
+//            vertList3.add(list.get(2));
+//            vertList4.add(list.get(3));
+//            vertList5.add(list.get(4));
+//            vertList6.add(list.get(5));
+//            vertList7.add(list.get(6));
+//            vertList8.add(list.get(7));
+//            vertList9.add(list.get(8));
+//        }
+//        superVertList.addAll(List.of(vertList1, vertList2, vertList3, vertList4, vertList5, vertList6, vertList7, vertList8, vertList9));
+//        System.out.println(superVertList);
+//    }
+//
+//    public void checkVerticalListsAreDistinct() {
+//        //for(List<Integer> vertList : superVertList) {
+//
+//            while(CollectionUtils.containsAny(vertList1.subList(0,3),vertList1.subList(3,6))
+//                    || (CollectionUtils.containsAny(vertList1.subList(0,3),vertList1.subList(6,9))
+//                    || (CollectionUtils.containsAny(vertList1.subList(3,6),vertList1.subList(6,9))))) {
+//        boolean containAll = vertList1.containsAll(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9)) ? true : false;
+//        System.out.println(containAll);
+//        if (!vertList1.containsAll(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9))) {
+//            runAllGridChecks();
+//            for (List<Integer> list : superVertList) {
+//                list.clear();
+//                superVertList.clear();
+//            }
+//            makeVerticalLists();
+//        }
+//    }
