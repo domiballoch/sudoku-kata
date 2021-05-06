@@ -9,7 +9,7 @@ import java.util.List;
 
 @Getter
 @Component
-public class SolverSetUp {
+public class SudokuLists {
 
     @Autowired
     private SubListCheckers subListCheckers;

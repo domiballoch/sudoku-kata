@@ -5,16 +5,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class SolverSetUpTest {
+public class SudokuListsTest {
 
     @Autowired
-    private SolverSetUp solverSetUp;
+    private SudokuLists sudokuLists;
 
     @Test
     public void testSudoku() {
-        solverSetUp.addListsToSuperList();
-        solverSetUp.populateLists();
-        solverSetUp.runMethods();
-        solverSetUp.printLists();
+        sudokuLists.addListsToSuperList();
+        sudokuLists.populateLists();
+        sudokuLists.runMethods();
+        sudokuLists.printLists();
     }
 }

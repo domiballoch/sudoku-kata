@@ -11,7 +11,7 @@ import java.util.List;
 public class ReCheckers {
 
     @Autowired
-    SolverSetUp solverSetUp;
+    SudokuLists sudokuLists;
 
     @Autowired
     private VerticalCheckers verticalCheckers;
@@ -26,8 +26,8 @@ public class ReCheckers {
                 || (CollectionUtils.containsAny(listB.subList(3, 6), listA.subList(3, 6))
                 || (CollectionUtils.containsAny(listB.subList(6, 9), listA.subList(6, 9))))) {
             Collections.shuffle(listB);
-            verticalCheckers.verticalCheckerList5(solverSetUp.getList5(), solverSetUp.getList1(),
-                    solverSetUp.getList2(), solverSetUp.getList3(), solverSetUp.getList4());
+            verticalCheckers.verticalCheckerList5(sudokuLists.getList5(), sudokuLists.getList1(),
+                    sudokuLists.getList2(), sudokuLists.getList3(), sudokuLists.getList4());
         }
     }
 
@@ -39,8 +39,8 @@ public class ReCheckers {
                 || (CollectionUtils.containsAny(listC.subList(3, 6), listB.subList(3, 6))
                 || (CollectionUtils.containsAny(listC.subList(6, 9), listB.subList(6, 9)))))))) {
             Collections.shuffle(listC);
-            verticalCheckers.verticalCheckerList6(solverSetUp.getList6(), solverSetUp.getList1(),
-                    solverSetUp.getList2(), solverSetUp.getList3(), solverSetUp.getList4(), solverSetUp.getList5());
+            verticalCheckers.verticalCheckerList6(sudokuLists.getList6(), sudokuLists.getList1(),
+                    sudokuLists.getList2(), sudokuLists.getList3(), sudokuLists.getList4(), sudokuLists.getList5());
         }
     }
 
@@ -49,9 +49,9 @@ public class ReCheckers {
                 || (CollectionUtils.containsAny(listB.subList(3, 6), listA.subList(3, 6))
                 || (CollectionUtils.containsAny(listB.subList(6, 9), listA.subList(6, 9))))) {
             Collections.shuffle(listB);
-            verticalCheckers.verticalCheckerList8(solverSetUp.getList8(), solverSetUp.getList1(),
-                    solverSetUp.getList2(), solverSetUp.getList3(), solverSetUp.getList4(), solverSetUp.getList5(),
-                    solverSetUp.getList6(), solverSetUp.getList7());
+            verticalCheckers.verticalCheckerList8(sudokuLists.getList8(), sudokuLists.getList1(),
+                    sudokuLists.getList2(), sudokuLists.getList3(), sudokuLists.getList4(), sudokuLists.getList5(),
+                    sudokuLists.getList6(), sudokuLists.getList7());
         }
     }
 
@@ -63,9 +63,9 @@ public class ReCheckers {
                 || (CollectionUtils.containsAny(listC.subList(3, 6), listB.subList(3, 6))
                 || (CollectionUtils.containsAny(listC.subList(6, 9), listB.subList(6, 9)))))))) {
             Collections.shuffle(listC);
-            verticalCheckers.verticalCheckerList9(solverSetUp.getList9(), solverSetUp.getList1(),
-                    solverSetUp.getList2(), solverSetUp.getList3(), solverSetUp.getList4(), solverSetUp.getList5(),
-                    solverSetUp.getList6(), solverSetUp.getList7(), solverSetUp.getList8());
+            verticalCheckers.verticalCheckerList9(sudokuLists.getList9(), sudokuLists.getList1(),
+                    sudokuLists.getList2(), sudokuLists.getList3(), sudokuLists.getList4(), sudokuLists.getList5(),
+                    sudokuLists.getList6(), sudokuLists.getList7(), sudokuLists.getList8());
         }
     }
 }
