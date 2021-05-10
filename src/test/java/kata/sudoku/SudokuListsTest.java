@@ -10,6 +10,9 @@ public class SudokuListsTest {
     @Autowired
     private SudokuLists sudokuLists;
 
+    /**
+     * Currently there are no asserts - this will run the program.
+     */
     @Test
     public void testSudoku() {
         sudokuLists.addListsToSuperList();
