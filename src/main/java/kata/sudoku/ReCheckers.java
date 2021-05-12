@@ -21,7 +21,7 @@ public class ReCheckers {
      * Similar to the sublist checkers but in a recursive loop with the vertical checkers
      * This is required so both checks can loop until both pass or one will mess up the other
      */
-    public void recheckerList5(List<Integer> listB, List<Integer> listA) {
+    protected void recheckerList5(List<Integer> listB, List<Integer> listA) {
         if (CollectionUtils.containsAny(listB.subList(0, 3), listA.subList(0, 3))
                 || (CollectionUtils.containsAny(listB.subList(3, 6), listA.subList(3, 6))
                 || (CollectionUtils.containsAny(listB.subList(6, 9), listA.subList(6, 9))))) {
@@ -31,7 +31,7 @@ public class ReCheckers {
         }
     }
 
-    public void recheckerList6(List<Integer> listC, List<Integer> listB, List<Integer> listA) {
+    protected void recheckerList6(List<Integer> listC, List<Integer> listB, List<Integer> listA) {
         while (CollectionUtils.containsAny(listC.subList(0, 3), listA.subList(0, 3))
                 || (CollectionUtils.containsAny(listC.subList(3, 6), listA.subList(3, 6))
                 || (CollectionUtils.containsAny(listC.subList(6, 9), listA.subList(6, 9))
@@ -44,7 +44,7 @@ public class ReCheckers {
         }
     }
 
-    public void recheckerList8(List<Integer> listB, List<Integer> listA) {
+    protected void recheckerList8(List<Integer> listB, List<Integer> listA) {
         if (CollectionUtils.containsAny(listB.subList(0, 3), listA.subList(0, 3))
                 || (CollectionUtils.containsAny(listB.subList(3, 6), listA.subList(3, 6))
                 || (CollectionUtils.containsAny(listB.subList(6, 9), listA.subList(6, 9))))) {
@@ -55,7 +55,7 @@ public class ReCheckers {
         }
     }
 
-    public void recheckerList9(List<Integer> listC, List<Integer> listB, List<Integer> listA) {
+    protected void recheckerList9(List<Integer> listC, List<Integer> listB, List<Integer> listA) {
         while (CollectionUtils.containsAny(listC.subList(0, 3), listA.subList(0, 3))
                 || (CollectionUtils.containsAny(listC.subList(3, 6), listA.subList(3, 6))
                 || (CollectionUtils.containsAny(listC.subList(6, 9), listA.subList(6, 9))

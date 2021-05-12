@@ -24,7 +24,7 @@ public class VerticalCheckers {
      * 8(1,2,3,4,5,6,7)
      * 9(1,2,3,4,5,6,7,8)
      */
-    public void verticalCheckerList4(List<Integer> listD, List<Integer> listA, List<Integer> listB,
+    protected void verticalCheckerList4(List<Integer> listD, List<Integer> listA, List<Integer> listB,
                                      List<Integer> listC) {
         int i=0;
         while(i<9){
@@ -39,7 +39,7 @@ public class VerticalCheckers {
         }
     }
 
-    public void verticalCheckerList5(List<Integer> listE, List<Integer> listA, List<Integer> listB,
+    protected void verticalCheckerList5(List<Integer> listE, List<Integer> listA, List<Integer> listB,
                                      List<Integer> listC, List<Integer> listD) {
         int i=0;
         while(i<9) {
@@ -56,7 +56,7 @@ public class VerticalCheckers {
         reCheckers.recheckerList5(listE, listD);
     }
 
-    public void verticalCheckerList6(List<Integer> listF, List<Integer> listA, List<Integer> listB,
+    protected void verticalCheckerList6(List<Integer> listF, List<Integer> listA, List<Integer> listB,
                                      List<Integer> listC, List<Integer> listD, List<Integer> listE) {
         int i=0;
         while(i<9) {
@@ -74,7 +74,7 @@ public class VerticalCheckers {
         reCheckers.recheckerList6(listF, listE, listD);
     }
 
-    public void verticalCheckerList7(List<Integer> listG, List<Integer> listA, List<Integer> listB,
+    protected void verticalCheckerList7(List<Integer> listG, List<Integer> listA, List<Integer> listB,
                                      List<Integer> listC, List<Integer> listD, List<Integer> listE,
                                      List<Integer> listF) {
         int i=0;
@@ -93,7 +93,7 @@ public class VerticalCheckers {
         }
     }
 
-    public void verticalCheckerList8(List<Integer> listH, List<Integer> listA, List<Integer> listB,
+    protected void verticalCheckerList8(List<Integer> listH, List<Integer> listA, List<Integer> listB,
                                      List<Integer> listC, List<Integer> listD, List<Integer> listE,
                                      List<Integer> listF, List<Integer> listG) {
         int i=0;
@@ -114,7 +114,7 @@ public class VerticalCheckers {
         reCheckers.recheckerList8(listH, listG);
     }
 
-    public void verticalCheckerList9(List<Integer> listI, List<Integer> listA, List<Integer> listB,
+    protected void verticalCheckerList9(List<Integer> listI, List<Integer> listA, List<Integer> listB,
                                      List<Integer> listC, List<Integer> listD, List<Integer> listE,
                                      List<Integer> listF, List<Integer> listG, List<Integer> listH) {
         int i=0;

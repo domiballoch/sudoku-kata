@@ -4,6 +4,7 @@ import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,7 +48,7 @@ public class SudokuLists {
     /**
      * Adds all 9 lists to a super list of lists
      */
-    public void addListsToSuperList() {
+    protected void addListsToSuperList() {
         superList.addAll(List.of(list1, list2, list3, list4, list5, list6, list7, list8, list9));
     }
 
@@ -55,14 +56,14 @@ public class SudokuLists {
      * Generates a random number from 1-9
      * @return int
      */
-    public int random() {
+    private int random() {
         return num = (int) ((Math.random() * 9) + 1);
     }
 
     /**
      * Populates each list with a random number
      */
-    public void populateLists() {
+    protected void populateLists() {
         for (List<Integer> list : superList) {
             random();
             while (list.size() < 9) {
@@ -78,7 +79,7 @@ public class SudokuLists {
     /**
      * Prints all 9 lists, removing array brackets
      */
-    public void printLists() {
+    protected void printLists() {
         for (List<Integer> list : superList) {
             String cleanGrid = list.toString()
                     .replace("[", "")
@@ -91,7 +92,7 @@ public class SudokuLists {
     /**
      * Runs methods in order
      */
-    public void runMethods() {
+    protected void runMethods() {
         subListCheckers.populateFirst3ListsGrids3x3(getList1(), getList2(), getList3());
         verticalCheckers.verticalCheckerList4(getList4(), getList1(), getList2(), getList3());
         subListCheckers.subListCheckerCompareTwoLists(getList5(), getList4());

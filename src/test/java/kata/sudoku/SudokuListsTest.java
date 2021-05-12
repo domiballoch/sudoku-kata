@@ -11,13 +11,9 @@ public class SudokuListsTest {
     private SudokuLists sudokuLists;
 
     /**
-     * Currently there are no asserts - this will run the program.
+     * TODO: Tests to be added.
      */
-    @Test
+    //@Test
     public void testSudoku() {
-        sudokuLists.addListsToSuperList();
-        sudokuLists.populateLists();
-        sudokuLists.runMethods();
-        sudokuLists.printLists();
     }
 }

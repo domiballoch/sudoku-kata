@@ -19,7 +19,7 @@ public class SubListCheckers {
      * 4-5, 4-6, 5-6
      * 7-8. 7-9, 8-9
      */
-    public void populateFirst3ListsGrids3x3(List<Integer> listA, List<Integer> listB, List<Integer> listC) {
+    protected void populateFirst3ListsGrids3x3(List<Integer> listA, List<Integer> listB, List<Integer> listC) {
         while (CollectionUtils.containsAny(listA.subList(0,3),listB.subList(0,3))
                 || (CollectionUtils.containsAny(listA.subList(3,6),listB.subList(3,6))
                 || (CollectionUtils.containsAny(listA.subList(6,9),listB.subList(6,9))))) {
@@ -40,7 +40,7 @@ public class SubListCheckers {
      * Compares sublists of 2 lists - comparing listB against listA
      * If any sublist contain elements from the other then shuffle and re-check listB
      */
-    public void subListCheckerCompareTwoLists(List<Integer> listB, List<Integer> listA) {
+    protected void subListCheckerCompareTwoLists(List<Integer> listB, List<Integer> listA) {
         while (CollectionUtils.containsAny(listB.subList(0, 3), listA.subList(0, 3))
                 || (CollectionUtils.containsAny(listB.subList(3, 6), listA.subList(3, 6))
                 || (CollectionUtils.containsAny(listB.subList(6, 9), listA.subList(6, 9))))) {
@@ -52,7 +52,7 @@ public class SubListCheckers {
      * Compares sublists of 3 lists - comparing listC against lists A & B
      * If any sublist contain elements from the other then shuffle and re-check listC
      */
-    public void subListCheckerCompareThreeLists(List<Integer> listC, List<Integer> listB, List<Integer> listA) {
+    protected void subListCheckerCompareThreeLists(List<Integer> listC, List<Integer> listB, List<Integer> listA) {
         while (CollectionUtils.containsAny(listC.subList(0, 3), listA.subList(0, 3))
                 || (CollectionUtils.containsAny(listC.subList(3, 6), listA.subList(3, 6))
                 || (CollectionUtils.containsAny(listC.subList(6, 9), listA.subList(6, 9))
