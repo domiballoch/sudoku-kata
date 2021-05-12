@@ -3,7 +3,7 @@
 
 <h3>Description</h3>
 Create a completed sudoku board using either a backtracking algorithm or list manipulation
-<br/>Run test to see grid
+<br/>Start app to see grid
 <br/>Proper tests still need to be added
 
 <h3>Design</h3>
