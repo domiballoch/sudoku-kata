@@ -1,1 +1,8 @@
+spring:
+  application:
+    name: sudoku-kata
 
+log:
+  service: ${spring.application.name}
+  appender: CONSOLE
+  level: DEBUG
