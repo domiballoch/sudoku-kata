@@ -1,5 +1,4 @@
 
-[![Actions Status](https://github.com/domiballoch/sudoku-kata/actions/workflows/maven.yml/badge.svg)](https://github.com/domiballoch/sudoku-kata/actions)
 [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/compatibility-betamax.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
